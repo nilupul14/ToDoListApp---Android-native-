@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Add a New Task</string>
+    <string name="tv_displayName"> To Do List </string>
+    <string name="rb_high">HIGH</string>
+    <string name="rb_medium">MEDIUM</string>
+    <string name="rb_low">LOW</string>
+    <string name="title_activity_all_task2">All Tasks</string>
+    <string name="title_activity_fullscreen">ToDoList</string>
+    <string name="dummy_button">Dummy Button</string>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".CreateTask">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="left" />
+
+        <EditText
+            android:id="@+id/etTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe your task"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="textWebEmailAddress"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:id="@+id/text_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:gravity="left" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end"
+            android:padding="10dp"
+            android:id="@+id/rgPriority" >
+
+
+            <RadioButton
+                android:id="@+id/rb_high"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:buttonTint="@color/colorWhite"
+                android:background="@color/colorRed"
+                android:textStyle="bold"
+                android:text="@string/rb_high"
+                android:textSize="13dp"
+                android:textAlignment="center"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rb_medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:buttonTint="@color/colorWhite"
+                android:background="@color/colorOrange"
+                android:checked="false"
+                android:text="@string/rb_medium"
+                android:textSize="13dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/rb_low"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:buttonTint="@color/colorWhite"
+                android:background="@color/colorYellow"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="@string/rb_low"
+                android:textSize="13dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_remind_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remind Me"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="40dp"
+            android:gravity="left" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="@color/colorBlue"
+                android:textSize="18sp"
+                android:textColor="#ffff"
+                android:layout_alignParentLeft="true"
+                android:text="SET TIME"
+                />
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:background="@color/colorBlue"
+                android:textSize="18sp"
+                android:textColor="#ffff"
+                android:layout_alignParentRight="true"
+                android:text="SET DATE" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="ADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="19sp"
+            android:textColor="#ffff"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
